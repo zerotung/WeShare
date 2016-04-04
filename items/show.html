@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>分类显示</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../src/index.css">
+    <script src="../src/jquery.js" type="text/javascript"></script>
+    <script src="show.js" type="text/javascript"></script>
+    <script src="../src/jquery.lazyload.js" type="text/javascript"></script>
+    <style type="text/css">
+    #typeTitle {
+        text-align: center;
+        font-size: 30px;
+        background: #cfc;
+        margin: 10px 0px;
+        padding: 5px 0px;
+    }
+    
+    .item {
+        background: #cfc;
+        position: relative;
+        padding: 20px;
+        margin: 10px 10px;
+        width: 40%;
+        float: left;
+    }
+    
+    .item .name {
+        font-size: 30px;
+    }
+    
+    .item .price {
+        font-size: 20px
+    }
+    
+    .item img {
+        margin: 20px 0px;
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .item .detail,
+    .address,
+    .message {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img id="topLogo" class="logo" src="../src/logo.png" style="position: absolute;top: -20px;left: 50px">
+            <img id="topUsrPic" src="../src/userPic.jpg" class="usrPic">
+            <p id="topUsrName" class="usrName topInfo">sying</p>
+            <p id="topUsrSchool" class="usrSchool topInfo">华南理工大学</p>
+        </div>
+        <div id="body">
+            <div id="bodyWrap">
+                <div id="search">
+                    <input type="text" id="searchInfo" value="搜索" />
+                </div>
+                <div id="type" class="inlineChoose">
+                    <ul>
+                        <li style="width: 49%">返回首页</li>
+                        <li style="width: 49%">其他分类</li>
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="typeInfo" class="inlineChoose" style="margin: 10px 0px;display: none">
+                    <!--                     <ul>
+                        <li style="width: 32%">电子产品</li>
+                        <li style="width: 32%">生活用品</li>
+                        <li style="width: 32%">学习用品</li>
+                        <div style="clear: both;"></div>
+                    </ul>
+                    <ul>
+                        <li style="width: 32%">体育用品</li>
+                        <li style="width: 32%">服装配饰</li>
+                        <li style="width: 32%">其他</li>
+                        <div style="clear: both;"></div>
+                    </ul>
+ -->
+                </div>
+                <div id="typeTitle"></div>
+                <div class="item ElectronicItems">
+                    <p class="name">小米充电宝</p>
+                    <p class="price">￥1.00/天</p>
+                    <img src="pics/ElectronicItems/item1.jpg">
+                    <p class="detail"><strong>物品描述：</strong>功能较好，充电速度快，提供给急需用的同学，一天一元，时间越久的话价格可以适当便宜一些。</p>
+                    <p class="address"><strong>地址：</strong>C11-203</p>
+                    <p class="message"><strong>留言：</strong>注意安全使用</p>
+                </div>
+                <div class="item ElectronicItems">
+                    <p class="name">佳能6D（单机）</p>
+                    <p class="price">￥20.00/天</p>
+                    <img src="pics/ElectronicItems/item2.jpg">
+                    <p class="detail"><strong>物品描述：</strong>画质出众，性能高，2020万有效像素，DIGIC5+处理器，11点自动对焦感应器，WiFi功能，为摄影发烧友设计的准专业级</p>
+                    <p class="address"><strong>地址：</strong>C12</p>
+                    <p class="message"><strong>留言：</strong>鉴于相机价格比较贵，希望有使用经验的用户借用才可</p>
+                </div>
+                <div class="item ElectronicItems">
+                    <p class="name">漫步者（EDIFIER）C2X</p>
+                    <p class="price">￥20.00/天</p>
+                    <img src="pics/ElectronicItems/item3.jpg">
+                    <p class="detail"><strong>物品描述：</strong>外置功放，全木质音箱，黑色音质细腻柔和，外型较为精致、美观，放音声压级不太高，承受的功率相对较少，能与电视、游戏机等音源形成出色搭配</p>
+                    <p class="address"><strong>地址：</strong>C7</p>
+                    <p class="message"><strong>留言：</strong>无</p>
+                </div>
+                <div class="item DailyUseItems">
+                    <p class="name">家用电子称</p>
+                    <p class="price">￥1.00/天</p>
+                    <img src="pics/DailyUseItems/item1.png">
+                    <p class="detail"><strong>物品描述：</strong>钢化玻璃膜材质的液晶数字显示屏，新一代G传感器，技术测量精准，再也不担心自己的体重了！</p>
+                    <p class="address"><strong>地址：</strong>C1-508</p>
+                    <p class="message"><strong>留言：</strong>萌萌哒的小粉，主人千万要轻脚轻放哟~~</p>
+                </div>
+                <div class="item DailyUseItems">
+                    <p class="name">家用吹风机</p>
+                    <p class="price">￥1.00/天</p>
+                    <img src="pics/DailyUseItems/item2.png">
+                    <p class="detail"><strong>物品描述：</strong>飞科电吹风，高效率快速干发造型，可调节温度，风力强劲，不伤发</p>
+                    <p class="address"><strong>地址：</strong>C6-223</p>
+                    <p class="message"><strong>留言：</strong>用电要注意安全哟，手湿禁止触碰电吹风！</p>
+                </div>
+                <div class="item DailyUseItems">
+                    <p class="name">户外睡袋</p>
+                    <p class="price">￥5.00/天</p>
+                    <img src="pics/DailyUseItems/item3.jpg">
+                    <p class="detail"><strong>物品描述：</strong>户外高档型信封式睡袋，纯棉法兰绒棉料，保暖性好，让你一夜睡得安心舒适。</p>
+                    <p class="address"><strong>地址：</strong>C3-502</p>
+                    <p class="message"><strong>留言：</strong>请小心爱护睡袋哟，避免刮损破裂</p>
+                </div>
+                <div class="item StudyItems">
+                    <p class="name">解忧杂货店 精装</p>
+                    <p class="price">免费</p>
+                    <img src="pics/StudyItems/item1.jpg">
+                    <p class="detail"><strong>物品描述：</strong>日本作家东野圭吾的《解忧杂货店》，出版当年即获中央公论文艺奖。</p>
+                    <p class="address"><strong>地址：</strong>C8</p>
+                    <p class="message"><strong>留言：</strong>作品超越推理小说的范围，却比推理小说更加扣人心弦。书很好看，想跟爱看书的分享</p>
+                </div>
+                <div class="item SportItems">
+                    <p class="name">山地自行车</p>
+                    <p class="price">￥10.00/天</p>
+                    <img src="pics/SportItems/item1.jpg">
+                    <p class="detail"><strong>物品描述：</strong>永久27速自行车 锁死前叉/2培林花鼓/铝合金26寸山地车/建大轮胎/轴承中轴 乐途 黑绿色 27速</p>
+                    <p class="address"><strong>地址：</strong>C7</p>
+                    <p class="message"><strong>留言：</strong>还有其他骑行装备，可以私聊</p>
+                </div>
+                <div class="item SportItems">
+                    <p class="name">海德 Head Speed 网球拍</p>
+                    <p class="price">免费</p>
+                    <img src="pics/SportItems/item2.jpg">
+                    <p class="detail"><strong>物品描述：</strong>男女通用，初中级首选</p>
+                    <p class="address"><strong>地址：</strong>C1</p>
+                    <p class="message"><strong>留言：</strong>只要正确使用，欢迎借用</p>
+                </div>
+                <div class="item SportItems">
+                    <p class="name">旱冰鞋</p>
+                    <p class="price">￥10.00/天</p>
+                    <img src="pics/SportItems/item3.jpg">
+                    <p class="detail"><strong>物品描述：</strong>直排轮滑鞋高性能平花鞋，白黑</p>
+                    <p class="address"><strong>地址：</strong>C5</p>
+                    <p class="message"><strong>留言：</strong>无</p>
+                </div>
+                <div class="item ClothesItems">
+                    <p class="name">女士正装</p>
+                    <p class="price">￥8.00/天</p>
+                    <img src="pics/ClothesItems/item1.png">
+                    <p class="detail"><strong>物品描述：</strong>经典简约版的女士西装，毛料上乘，舒适紧身，155-162的妹子都适合哟</p>
+                    <p class="address"><strong>地址：</strong>C2-305</p>
+                    <p class="message"><strong>留言：</strong>缺正装的妹子们快看过来！</p>
+                </div>
+                <div class="item ClothesItems">
+                    <p class="name">男士皮鞋</p>
+                    <p class="price">￥5.00/天</p>
+                    <img src="pics/ClothesItems/item2.png">
+                    <p class="detail"><strong>物品描述：</strong>时尚简约皮鞋，一款百搭的鞋，可以帮助你在求职面试时脱颖而出！</p>
+                    <p class="address"><strong>地址：</strong>C2-203</p>
+                    <p class="message"><strong>留言：</strong>鞋码是42哟</p>
+                </div>
+                <div class="item AccountShareItems">
+                    <p class="name">优酷账号共享</p>
+                    <p class="price">￥2.00/天</p>
+                    <img src="pics/AccountShareItems/item1.png">
+                    <p class="detail"><strong>物品描述：</strong>想要VIP观影特权？找我要啊！</p>
+                    <p class="address"><strong>地址：</strong>无</p>
+                    <p class="message"><strong>留言：</strong>更多优质资源等着你！</p>
+                </div>
+                <div class="item AccountShareItems">
+                    <p class="name">爱奇艺账号共享</p>
+                    <p class="price">￥2.00/天</p>
+                    <img src="pics/AccountShareItems/item2.jpg">
+                    <p class="detail"><strong>物品描述：</strong>想追韩剧？这里有及时更新的韩剧资源，自制剧也是不错的哟！</p>
+                    <p class="address"><strong>地址：</strong>无</p>
+                    <p class="message"><strong>留言：</strong>还不快来勾搭欧巴？</p>
+                </div>
+                <div class="item OtherItems">
+                    <p class="name">猫</p>
+                    <p class="price">免费</p>
+                    <img src="pics/OtherItems/item1.jpg">
+                    <p class="detail"><strong>物品描述：</strong>在宿舍养的猫，很萌的一小只，由于宿舍近期要检查，欢迎喜欢猫咪的妹子，前来抱走调戏。</p>
+                    <p class="address"><strong>地址：</strong>C11</p>
+                    <p class="message"><strong>留言：</strong>会提供猫粮，只要偶尔跟她玩一玩就ok</p>
+                </div>
+                <div class="item OtherItems">
+                    <p class="name">瘦脸神器</p>
+                    <p class="price">￥5.00/天</p>
+                    <img src="pics/OtherItems/item2.png">
+                    <p class="detail"><strong>物品描述：</strong>瘦脸按摩器，黄金电动提升美容棒</p>
+                    <p class="address"><strong>地址：</strong></p>
+                    <p class="message"><strong>留言：</strong>想要美容的妹子可以试试，真的是很舒服，煲剧的时候用一下泡脚的时候用一下涂完护肤品用一下，效果还不错</p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="btm">
+                <p>copyright(c)</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

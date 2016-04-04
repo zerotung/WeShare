@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    display: block;
+    background: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+#wrap {
+    width: 100%;
+    background: #0e1
+}
+
+#header {
+    width: 100%;
+    height: 140px;
+    background: #0c1;
+    position: relative;
+}
+
+#topLogo {
+    display: block;
+}
+
+.usrPic {
+    width: 60px;
+}
+
+.topInfo {
+    position: absolute;
+    display: block;
+    right: 60px;
+    color: #efe;
+}
+
+#topUsrPic {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+}
+
+#topUsrName {
+    top: 80px;
+}
+
+#topUsrSchool {
+    top: 100px;
+}
+
+#body {
+    width: 100%;
+}
+
+#bodyWrap {
+    width: 80%;
+    margin: auto;
+}
+
+#search {
+    position: relative;
+    margin: 20px 0px;
+}
+
+#searchInfo {
+    display: block;
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 100%;
+    font-size: 30px;
+}
+
+.inlineChoose li {
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+    padding: 6px 0px;
+    text-align: center;
+    background: #A6EEA2;
+    float: left
+}
+
+#homepage {
+    margin: 20px 0px 20px 0px;
+}
+
+.objType {
+    margin: 15px 0px 20px 0px;
+    padding: 20px;
+    background: #cfc;
+    font-size: 0.5em;
+}
+
+.objType strong {
+    font-size: 30px;
+}
+
+.objType img {
+    width: 100%;
+}
+
+#issue {
+    margin: 20px 0px 20px 0px;
+    color: #575;
+}
+
+#issue p {
+    margin: 5px;
+}
+
+#issue input {
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+}
+
+#iShare {
+    padding: 20px 0px 0px;
+    background:
+}
+
+.issueWrap p:first-child {
+    font-size: 50px;
+}
+
+#iWant {
+    padding: 20px 0px;
+    background:
+}
+
+#submitShareInfo {
+    margin: 20px 0px;
+}
+
+#btm {
+    width: 100%;
+    padding: 10px;
+    background: #0c1;
+    text-align: center;
+    color: #efe;
+}
